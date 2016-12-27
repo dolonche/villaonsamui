@@ -348,6 +348,8 @@ main {
 	background-color: #fff;
 	border-radius: 15px;
 	overflow: hidden;
+	;
+	margin-top: 20px;
 }
 
 .card img {
@@ -359,6 +361,15 @@ main {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: 18px
+}
+
+.card p a {
+	color: black;
+	transition: 0.4s
+}
+
+.card p a:hover {
+	opacity: 0.5
 }
 
 .icons-span {
@@ -417,25 +428,27 @@ main {
 	background-color: #c3c3c3;
 	width: 100%;
 	height: 100%;
-	color: transparent
+	color: transparent;
 }
 
-.card:hover .card-img-wrapper a {
+.card-img-wrapper:hover a {
 	top: 0;
 	left: 0;
 	z-index: 10;
 	transition: 1s scale;
-	animation: anima 0.5s linear;
+	animation: anima 0.3s linear;
 	color: white
 }
 
 @keyframes anima {
 	0% {
 		background-color: transparent;
-		color: transparent
+		color: transparent;
+		transform: scale(0)
 	}
 	100% {
 		background-color: #c3c3c3;
-		color: white
+		color: white;
+		transform: scale(1)
 	}
 }
