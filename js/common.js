@@ -1,6 +1,6 @@
 $(document).ready(function() {
 $(".button").click(function() {
-    $(".main-menu ul").slideToggle();
+    $(".inner-list").slideToggle();
 })
 	//Таймер обратного отсчета
 	//Документация: http://keith-wood.name/countdown.html
