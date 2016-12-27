@@ -1,0 +1,83 @@
+*::-webkit-input-placeholder {}
+
+*:-moz-placeholder {}
+
+*::-moz-placeholder {}
+
+*:-ms-input-placeholder {}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {}
+
+body input:required:valid,
+body textarea:required:valid {}
+
+body {
+	font-family: "RobotoRegular", "Arial", sans-serif;
+}
+
+.top-header {
+	background-color: #013;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+.top-header i {
+	margin-right: 10px;
+	float: left;
+}
+
+.top-header i + span {
+	float: left;
+	margin-top: 5px;
+}
+
+.top-header span {
+	color: white;
+}
+
+.top-header a {
+	font: inherit;
+	color: aliceblue
+}
+
+.top-header .col-md-2 {
+	margin-top: 5px;
+}
+
+.top-header .col-md-2 span {}
+
+.top-header .col-md-2 span a {
+	border: 1px solid white;
+	padding: 5px;
+	border-radius: 5px;
+	transition: 0.4s
+}
+
+.top-header .col-md-2 span a:hover {
+	background-color: #fff;
+	color: black
+}
+
+.top-header .col-md-2 span:last-child {
+	margin-left: 10px;
+}
+.top-header .col-md-1 i{
+	transition: 0.4s
+}
+.top-header .col-md-1 a:hover i{
+	opacity: 0.5
+}
+.fa-whatsapp {
+	color: #0DC143
+}
+
+.fa-skype {
+	color: #00AFF0
+}
+
+.fa-envelope {
+	color: #fff
+}
