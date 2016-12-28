@@ -472,11 +472,16 @@ footer {
     box-sizing: border-box;
     padding-top: 6px;
     text-align: center;
+    padding-left: 1px;
     color: aliceblue;
     background-color: #3C3C3C;
     border-radius: 5px;
     transition: 0.4s;
     float: left;
+}
+
+.social a:first-of-type {
+    padding-top: 7px;
 }
 
 .social a:first-of-type i {
@@ -519,4 +524,108 @@ footer .col-md-6 span {
     width: 20px;
     color: aliceblue;
     margin-right: 10px;
+}
+
+hr {
+    height: 2px;
+    z-index: 10;
+    background-color: #ccc;
+}
+
+.paginator {
+    margin-bottom: 40px;
+}
+
+.paginator ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paginator li {
+    display: block;
+    float: left;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #013;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: 0.3s
+}
+
+.paginator li:not(:first-child) {
+    margin-left: 5px;
+}
+
+.paginator a {
+    color: white
+}
+
+.paginator li:hover {
+    background-color: #fff;
+}
+
+.paginator li:hover a {
+    color: black
+}
+
+.features .col-md-3 {
+    text-align: center;
+    cursor: default
+}
+
+.features i,
+.features span {
+    display: block;
+}
+
+.features i {
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 19px;
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 0.5s
+}
+
+.features .col-md-3:hover i {
+    background-color: black;
+    color: white
+}
+
+.features span:first-of-type {
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-family: "RobotoBold";
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.features span:last-of-type {
+    font-size: 18px
+}
+
+.quotes {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.quotes img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+
+.quotes p {
+    margin-top: 20px;
+}
+
+.quotes p i {
+    color: darkgrey;
+    padding-left: 10px;
+    padding-right: 10px;
 }
