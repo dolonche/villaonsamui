@@ -4,29 +4,80 @@
 /* Large Devices, Wide Screens */
 
 @media only screen and (max-width: 1200px) {
-.top-header i {
-	margin-right: 5px;
-}
+	.top-header i {
+		margin-right: 5px;
+	}
+	.form .number-of-bedrooms label:nth-of-type(6) {
+		margin-left: 146px;
+	}
+	.form button {
+		width: 60px;
+	}
+	.bottom-header nav li:last-child {
+		margin-left: 0;
+	}
 }
 
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+	.bottom-header nav {
+		text-align: center;
+	}
+	.bottom-header nav li:last-child {
+		margin-left: 15px;
+	}
+	.bottom-header h1::after {
+		display: none;
+	}
+	.bottom-header .logo {
+		text-align: center;
+	}
+	.top-header .col-md-3:not(:first-of-type) i {
+		margin-left: 15px;
+	}
+	.top-header .col-md-1 i {
+		margin-top: -28px;
+	}
+	.form .number-of-bedrooms label:nth-of-type(6) {
+		margin-left: 28px;
+	}
+	.min,
+	.max,
+	.number-of-bedrooms,
+	.area,
+	.beach-distance,
+	.pool {
+		margin-top: 15px;
+	}
+	.area {
+		margin-top: 15px !important;
+	}
+	.form button {
+		float: right;
+		margin-top: 15px;
+	}
+	.top-header i.fa-envelope {
+		display: none;
+	}
+	.top-header .col-md-2 {
+		text-align: left;
+	}
+	.top-header .col-md-2 span:first-of-type {
+		margin-left: 10px;
+	}
+}
 
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {
-
-}
+@media only screen and (max-width: 768px) {}
 
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (max-width: 480px) {
-
-}
+@media only screen and (max-width: 480px) {}
 
 
 /* Custom, iPhone Retina */
