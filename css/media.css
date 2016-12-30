@@ -40,6 +40,9 @@
 	.top-header .col-md-1 i {
 		margin-top: -28px;
 	}
+	.top-header i {
+		margin-left: 0 !important;
+	}
 	.form .number-of-bedrooms label:nth-of-type(6) {
 		margin-left: 28px;
 	}
@@ -58,21 +61,49 @@
 		float: right;
 		margin-top: 15px;
 	}
-	.top-header i.fa-envelope {
-		display: none;
-	}
 	.top-header .col-md-2 {
 		text-align: left;
 	}
 	.top-header .col-md-2 span:first-of-type {
 		margin-left: 10px;
 	}
+	.language {
+		margin-top: 40px !important;
+	}
+	.language span a {
+		float: left;
+	}
+	.language span:last-of-type a {
+		margin-left: 15px;
+	}
+	.language i {
+		box-sizing: border-box;
+		padding-top: 6px;
+	}
 }
 
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+	.top-header .col-md-3 {
+		display: none;
+	}
+	.hidden-language {
+		text-align: center;
+	}
+	.language {
+		margin-top: 0px !important;
+	}
+	.features .col-md-3 {
+		margin-top: 30px;
+	}
+	.quotes .col-md-6 {
+		clear: right;
+		float: left;
+		margin-top: 30px;
+	}
+}
 
 
 /* Extra Small Devices, Phones */

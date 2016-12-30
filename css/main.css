@@ -15,6 +15,7 @@ body textarea:required:valid {}
 body {
 	font-family: "RobotoRegular", "Arial", sans-serif;
 	background-color: #EBEBEC;
+	overflow-x: hidden;
 }
 
 header {
@@ -59,15 +60,14 @@ header {
 	border-radius: 5px;
 	transition: 0.4s;
 	color: aliceblue;
-	float: left;
 	margin-right: 20px;
 }
 
 .hidden-language i {
 	transition: 0.4s;
 	color: aliceblue;
-	float: left;
-	margin-top: 2px;
+	float: right;
+	margin-top: -27px;
 }
 
 .hidden-language span a:hover {
@@ -119,6 +119,15 @@ header {
 	transition: 0.4s;
 	float: right;
 }
+
+
+/*
+#top {
+	position: fixed;
+	z-index: 10;
+	right: 0;
+}
+*/
 
 .top-header .col-md-1 a:hover i {
 	opacity: 0.5
@@ -667,4 +676,96 @@ hr {
 	color: darkgrey;
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+.slider-wrapper {
+	position: relative
+}
+
+.slick-dots li {
+	transform: scale(2)
+}
+
+.slider-wrapper button.prev,
+.slider-wrapper button.next {
+	border: none;
+	background-color: transparent;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	outline: none;
+	margin-top: -20px;
+}
+
+.slider-wrapper button.prev {
+	left: 15px;
+}
+
+.slider-wrapper button.next {
+	right: 15px;
+}
+
+.slider-wrapper button i {
+	color: aliceblue;
+	display: block;
+	width: 48px;
+	height: 48px;
+	border: 2px solid white;
+	border-radius: 50%;
+	box-sizing: border-box;
+	padding-left: 5px;
+	transition: 0.4s
+}
+
+.slider-wrapper button i:hover {
+	color: black;
+	background-color: aliceblue;
+}
+
+.slider-wrapper button.prev i {
+	padding-right: 5px;
+}
+
+.slider-wrapper,
+.right-product-column {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.right-product-column p {
+	letter-spacing: 2px;
+	font-size: 24px;
+	margin-top: -8px;
+}
+
+.write-me {
+	margin-top: -20px;
+}
+
+.write-me input,
+.write-me textarea {
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 10px;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	outline: none;
+	border-radius: 5px
+}
+
+.write-me button {
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	outline: none;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 18px;
+	transition: 0.3s ease-in-out
+}
+
+.write-me button:hover {
+	background-color: black;
+	color: aliceblue
 }
