@@ -679,11 +679,21 @@ hr {
 }
 
 .slider-wrapper {
-    position: relative
+    position: relative;
+}
+
+.slick-dots {
+    top: 102%;
 }
 
 .slick-dots li {
-    margin-left: 30px !important;
+    margin-left: 35px !important;
+    float: left;
+    height: 40px !important;
+}
+
+.slick-dots li:first-child {
+    margin-left: 0 !important;
 }
 
 .slick-dots li button {
@@ -754,6 +764,9 @@ hr {
 .right-product-column p {
     letter-spacing: 2px;
     font-size: 24px;
+}
+
+.right-product-column h2 {
     margin-top: -8px;
 }
 
@@ -787,4 +800,52 @@ hr {
 .write-me button:hover {
     background-color: black;
     color: aliceblue
+}
+
+.main-characteristics h2 {
+    font-family: "RobotoRegular", sans-serif;
+    font-weight: 500
+}
+
+.characteristics-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 5px
+}
+
+.characteristics-item:nth-child(odd) {
+    background-color: #fff;
+}
+
+.characteristics-item:nth-child(even) {
+    background-color: ;
+}
+
+.characteristics-item span:nth-child(odd) {
+    color: darkgray;
+}
+
+.characteristics-item span:nth-child(even) {
+    /*    float: right;*/
+    margin-right: 10px;
+}
+
+.product-information {
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.product-information h1 {
+    font-family: "RobotoRegular", sans-serif;
+    font-weight: 500
+}
+
+.special-offer {
+    margin-top: 40px;
+}
+
+.special-offer p {
+    font-size: 18px;
+    line-height: 30px;
 }
