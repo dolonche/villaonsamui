@@ -207,13 +207,15 @@ header {
 
 .inner-list {
     position: absolute;
-    background-color: #404040;
+    background-color: #013;
     left: 0;
-    top: 0;
+    top: -10px;
     width: 100%;
     text-align: center;
     display: none;
-    box-shadow: 0px 4px 6px 4px #ccc;
+    border: 1px solid #fff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     z-index: 10
 }
 
@@ -225,6 +227,12 @@ ul.inner-list li {
     padding-top: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ccc;
+}
+
+ul.inner-list li:last-child {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom: none
 }
 
 ul.inner-list li:not(:first-child) {
@@ -697,7 +705,6 @@ hr {
 }
 
 .slick-dots li button {
-    background-image: url(/img/first.jpg);
     width: 50px !important;
 }
 
@@ -705,15 +712,44 @@ hr {
     width: 50px !important;
     height: 35px !important;
     background-color: #000;
-    background-image: url(/img/first.jpg);
+    background-image: url(../img/first.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: transparent !important;
 }
 
 .slick-dots li:nth-child(even) button::before {
-    background-image: url(/img/second.jpg) !important;
+    background-image: url(../img/second.jpg) !important;
 }
+
+
+/*код для миниатюр слайдера
+
+.slick-dots li:nth-child(1) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(2) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(3) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(4) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(5) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(6) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(7) button::before{
+     background-image: url();
+}
+.slick-dots li:nth-child(8) button::before{
+     background-image: url();
+}
+*/
 
 .slider-wrapper button.prev,
 .slider-wrapper button.next {
@@ -849,4 +885,45 @@ hr {
     font-size: 18px;
     line-height: 30px;
     font-family: "Robotolight", sans-serif;
+}
+
+.map {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.contacts-left {
+    font-size: 24px;
+}
+
+.contacts-left h1 {
+    font-family: "RobotoLight";
+    font-weight: 300
+}
+
+.contacts-left i {
+    margin-right: 25px;
+}
+
+.contacts-left i:nth-of-type(2) {
+    margin-right: 32px;
+}
+
+.contacts-left i:nth-of-type(3) {
+    margin-right: 23px;
+    margin-bottom: 15px;
+}
+
+.about-us h1 {
+    font-family: "RobotoLight";
+    font-weight: 300
+}
+
+.about-us p {
+    line-height: 28px;
+    margin-bottom: 40px;
 }
