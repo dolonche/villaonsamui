@@ -392,6 +392,20 @@ main {
 	margin-top: 19px;
 }
 
+.id {
+	float: left;
+	clear: left;
+	margin-top: 17px;
+}
+
+.id label {
+	margin-right: 15px;
+}
+
+.id input {
+	padding-left: 5px;
+}
+
 .pool label,
 .beach-distance label {
 	margin-right: 15px;
