@@ -70,16 +70,24 @@
 			<div class="row">
 				<div class="intro">
 					<h2>Подберите лучший дом для отдыха на Самуи</h2>
-					<div class="form ">
+					<div class="form">
 						<form action="" class="filter clearfix">
-							<div class="col-md-3">
-								<div class="min">
-									<label for="min">от</label>
-									<input type="text" placeholder="0" id="min">
+							<div class="col-md-3 price-toggle">
+								<p>Стоимость (Р)</p>
+								<div class="price-controls clearfix">
+									<label for="" class="min-price">от
+										<input type="text" placeholder="0">
+									</label>
+									<label for="" class="max-price">до
+										<input type="text" placeholder="10000">
+									</label>
 								</div>
-								<div class="max">
-									<label for="max">до</label>
-									<input type="text" placeholder="5" id="max">
+								<div class="range-controls">
+									<div class="scale">
+										<div class="bar"></div>
+									</div>
+									<div class="range-toggle range-toggle-min"></div>
+									<div class="range-toggle range-toggle-max"></div>
 								</div>
 							</div>
 							<div class="col-md-4">
@@ -93,6 +101,18 @@
 										<option value="">Талинг Нам</option>
 										<option value="">Чавенг</option>
 										<option value="">Чонг Мон</option>
+									</select>
+								</div>
+								<div class="type-of-house">
+									<label for="type-of-house">Тип дома</label>
+									<select name="" id="type-of-house">
+										<option value="">Вилла</option>
+										<option value="">Большая вилла</option>
+										<option value="">Небольшая вилла</option>
+										<option value="">Вилла</option>
+										<option value="">Вилла</option>
+										<option value="">Вилла</option>
+										<option value="">Вилла</option>
 									</select>
 								</div>
 								<div class="number-of-bedrooms">
@@ -112,6 +132,7 @@
 									<label for="six">6</label>
 								</div>
 							</div>
+
 							<div class="col-md-4">
 								<div class="beach-distance">
 									<label for="">Расстоние до пляжа</label>
